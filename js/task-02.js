@@ -16,16 +16,51 @@ const images = [
 
 const ul = document.querySelector('.gallery')
 
-for (let i = 0; i < images.length; i++){
-  
-  const li = document.createElement('li');
+const el = images.map(imageData => {
 
+  const li = document.createElement('li');
   const img = document.createElement('img');
 
-  img.src = images[i].url;
-  img.alt = images[i].alt;
+  img.src = imageData.url;
+  img.alt = imageData.alt;
+
 
   li.appendChild(img);
-  ul.appendChild(li);
+  return li
+
+})
+
+ul.append(...el)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let i = 0; i < images.length; i++){
   
-}
+//   const li = document.createElement('li');
+
+//   const img = document.createElement('img');
+
+//   img.src = images[i].url;
+//   img.alt = images[i].alt;
+
+//   li.appendChild(img);
+//   ul.appendChild(li);
+  
+// } через цикл

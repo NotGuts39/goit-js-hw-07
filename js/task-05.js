@@ -20,6 +20,7 @@ button.addEventListener('click', el => {
 
   body.style.backgroundColor = randomColor;
   span.style.color = randomColor;
+  span.style.backgroundColor = randomColor;
 
 
 

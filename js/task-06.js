@@ -20,13 +20,15 @@ buttonCreate.addEventListener('click', () => {
     destroyBoxes();
     createBoxes(numberOfDivs);
     input.value = '';
+    boxSize = 30;
             
   }
 
 });
 
-function createBoxes(amount)  {
-
+function createBoxes(amount) {
+  
+  
   for (let i = 0; i < amount; i++) {
 
       const div = document.createElement('div');
@@ -36,6 +38,8 @@ function createBoxes(amount)  {
     div.style.backgroundColor = getRandomHexColor();
     boxSize += 10;
     boxes.appendChild(div);
+
+    
   }
 }
 

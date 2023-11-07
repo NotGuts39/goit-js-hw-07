@@ -3,7 +3,7 @@ const categories = document.querySelector('#categories')
 const items = categories.querySelectorAll('li.item')
 
 
-console.log(items.length)
+console.log('Number of categories: ' + items.length)
 
 items.forEach(item => {
 
@@ -11,8 +11,8 @@ items.forEach(item => {
 
     const li = item.querySelectorAll('ul > li');
 
-    console.log(head.textContent)
-    console.log(li.length)
+    console.log('Category: ' + head.textContent)
+    console.log('Elements: ' + li.length)
 })
 
 
